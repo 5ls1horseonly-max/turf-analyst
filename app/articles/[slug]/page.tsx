@@ -146,11 +146,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           <MDXRemote
             source={content}
             components={mdxComponents}
-            options={{
-              mdxOptions: {
-                remarkPlugins: [remarkGfm],
-              },
-            }}
+            options={{ remarkPlugins: [remarkGfm] }}
           />
         </div>
 
